@@ -1,21 +1,19 @@
-Availability
+# Availability
 
-let say today cbse announce the result and lot of students check the result suddenly website go down
+Let's say today CBSE announces the results and a lot of students check the results; suddenly the website goes down.
 
-let figure out which one have high Availability monolithic vs distributed
+Let's figure out which one has high availability: monolithic vs. distributed.
 
-In monolithic all the things is deployed on 1 server. and suppose if the server is down then the website will go down means whole the things will go down whole service stops.
-In distributed every service is deployed on different server. suppose if one server is down then the other server will work properly so the website will not go down means  1 service is down but the other service will work properly.
+* **In Monolithic:** All the things are deployed on 1 server. And suppose, if the server is down, then the website will go down. This means the whole thing will go down, and the whole service stops.
+* **In Distributed:** Every service is deployed on a different server. Suppose if one server is down, then the other server will work properly. So the website will not go down. This means 1 service is down, but the other service will work properly.
 
-as result after figureing out the Availability is high in distributed system.
+As a result, after figuring it out, the availability is high in a distributed system.
 
-fault tolerance is directly proportional to Availability. 
+Fault tolerance is directly proportional to availability.
 
-How to increase the availability.
-ans: replication is nothing but making the copy of data on different server.
-distributed system is used for high availability.
-reduncancy is nothing but having multiple copies of same thing.
-such as multiple server, multiple database, multiple power supply, etc.
-by adding more machines we can increase the availability.
-
-redundency is duplication of nodes in case of some of them are failing we can use the other nodes.
+### How to Increase the Availability?
+* **Answer:** Replication is nothing but making a copy of data on a different server.
+* A distributed system is used for high availability.
+* **Redundancy:** Redundancy is nothing but having multiple copies of the same thing. Such as multiple servers, multiple databases, multiple power supplies, etc.
+* By adding more machines, we can increase the availability.
+* Redundancy is the duplication of nodes; in case some of them are failing, we can use the other nodes.

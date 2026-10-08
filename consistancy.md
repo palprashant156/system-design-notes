@@ -1,14 +1,17 @@
-consistancy: means data should be consistant let say a person have bank balance of 100 rupee and he withdraw 10 rupee from one machine suppose the other machine doesn't get updated with this transaction then the balance is not consistant.
+# Consistency
 
-consistancy means data should be same in all the distributed system.
+**Consistency** means data should be consistent. Let's say a person has a bank balance of 100 rupees and he withdraws 10 rupees from one machine. Suppose the other machine doesn't get updated with this transaction, then the balance is not consistent.
 
-lets identify where data is consistant monolithic or distributed system.
+Consistency means data should be the same in all distributed systems.
 
-Factor improving consistancy:
-improving network bandwidth so that synchromization become faster.
-Stop the read operation until all the server get updated.
-Replication based on distance aware strategies.
-Types of consistancy:
-1. Strong consistancy:when system doesnot allow any read operation until the data is not updated in all the server,there is no chance of dirty read.eg:banking transaction.
-2. Eventual consistancy:when system allow the read operation even if the data is not updated in all the server.eg:social media,instagram.
-3. Weak consistancy:when system doesnot guarantee any consistancy.
+Let's identify where data is consistent: monolithic or distributed systems.
+
+### Factors Improving Consistency:
+* Improving network bandwidth so that synchronization becomes faster.
+* Stop the read operation until all the servers get updated.
+* Replication based on distance-aware strategies.
+
+### Types of Consistency:
+1. **Strong Consistency:** When the system does not allow any read operation until the data is updated in all the servers, there is no chance of a dirty read. E.g.: banking transactions.
+2. **Eventual Consistency:** When the system allows the read operation even if the data is not updated in all the servers. E.g.: social media, Instagram.
+3. **Weak Consistency:** When the system does not guarantee any consistency.

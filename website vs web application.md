@@ -1,7 +1,9 @@
-Website is collection of web pages which contains static data and content. and the functionality is very less.
-Web application is dynamic web page. which change acording to user interaction.
-Example - e-commerce website, banking website, social media website.
+# Website vs Web Application
 
+* **Website:** A website is a collection of web pages that contain static data and content, and the functionality is very less.
+* **Web application:** A web application is a dynamic web page, which changes according to user interaction.
+* **Examples:** E-commerce website, banking website, social media website.
 
-website: is client only.
-web application: is client + server + database.
+### Comparison
+* **Website:** Is client only.
+* **Web application:** Is client + server + database.
