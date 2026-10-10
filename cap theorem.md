@@ -21,3 +21,14 @@ If we choose AP, then consistency would be compromised because in a distributed 
 
 **CA (Consistency and Availability)**
 If we choose CA, then partition tolerance would be compromised because in a monolithic system, single nodes will be there. Let's understand with an example: if one database is there, in that database data is continuously coming, so it is available, and due to live data, consistency is automatically there. But if the database goes down, then we cannot achieve partition tolerance.
+
+
+| # | System / Application | Availability | Consistency | Primary Choice | Why? |
+|---|---|:---:|:---:|---|---|
+| **a** | Blog Website | ✅ | ❌ | 🟢 **Availability** | Temporary stale content is usually acceptable |
+| **b** | Multiplayer Online Games | ✅ | ❌ | 🟢 **Availability** | Low latency and continuous gameplay are important |
+| **c** | Stock Trading Platform | ❌ | ✅ | 🔵 **Consistency** | Incorrect stock price/order data can cause financial loss |
+| **d** | Video Streaming Sites | ✅ | ❌ | 🟢 **Availability** | Users should be able to watch even if some data is slightly stale |
+| **e** | Ticket Booking System | ❌ | ✅ | 🔵 **Consistency** | The same seat/ticket cannot be sold to multiple people |
+| **f** | Video Chat Applications | ✅ | ❌ | 🟢 **Availability** | Continuous communication is more important than perfect state consistency |
+| **g** | Bank | ❌ | ✅ | 🔵 **Consistency** | Account balance and transactions must be accurate |
