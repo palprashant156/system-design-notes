@@ -15,3 +15,13 @@ Let's identify where data is consistent: monolithic or distributed systems.
 1. **Strong Consistency:** When the system does not allow any read operation until the data is updated in all the servers, there is no chance of a dirty read. E.g.: banking transactions.
 2. **Eventual Consistency:** When the system allows the read operation even if the data is not updated in all the servers. E.g.: social media, Instagram.
 3. **Weak Consistency:** When the system does not guarantee any consistency.
+
+## Cache Eviction Strategies
+
+The process of deletion of data from cache when the cache is full is called eviction.
+
+1. **LRU (Least Recently Used):** Delete the least recently used data from the cache. LRU deletes the data from the cache which is not used in a very long time.
+2. **MRU (Most Recently Used):** Delete the most recently used data from the cache.
+3. **FIFO (First In First Out):** Delete the first data that entered the cache.
+4. **LFU (Least Frequently Used):** Delete the least frequently used data from the cache.
+5. **LIFO (Last In First Out):** Delete the last data that entered the cache.
