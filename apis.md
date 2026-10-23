@@ -25,3 +25,33 @@ Content-Type: application/json
 ```
 
 Here, `GET` is the operation, `/api/users/42` identifies the requested resource, and the JSON body contains the result. The API also communicates outcomes through status codes—for example, `404 Not Found` if that user does not exist.
+
+## Example: Create an order
+
+A client can send an HTTP API a new order to create:
+
+```http
+POST /api/orders HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+  "productId": 7,
+  "quantity": 2
+}
+```
+
+The server might respond with:
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": 105,
+  "productId": 7,
+  "quantity": 2
+}
+```
+
+Here, `POST` asks the server to create a resource, and `201 Created` indicates that the order was created successfully.
